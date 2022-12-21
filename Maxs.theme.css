@@ -7,14 +7,8 @@
  * @version 2022.12.20
  * @source https://github.com/Maxwell-Fisher/Discord-Theme
  * @website https://maxwellcrafter.com
- * @invite 
+ * @invite rGxpStCKFM
  */
-
-/**********************************************************************************************************************************
-I designed this theme to go along with these 2 others, so I'd recommend that you use them as well, though it really doesn't matter.
-https://betterdiscord.app/theme/kaleidoscope
-https://betterdiscord.app/theme/RadialStatus
-**********************************************************************************************************************************/
 
 /* Import Ubuntu font */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
@@ -23,16 +17,20 @@ https://betterdiscord.app/theme/RadialStatus
 :root {
     --font-primary: ubuntu;
     --brand-500: #810081;
-    --text-normal: #FFFFFF;
-    --status-danger: #e020e0;
-    --interactive-active: #e020e0;
-    --channels-default: #c0f0c0;
-    --background-mentioned: #c070c0;
-    --background-primary: #10161c;
-    --background-secondary: #101a24;
-    --background-tertiary: #10171e;
+    --status-danger: #E020E0;
+    --interactive-active: #E020E0;
+    --background-mentioned: #C070C0;
+    --background-primary: #10161C;
+    --background-secondary: #101A24;
+    --background-tertiary: #10171E;
     --background-secondary-alt: #153555;
     --chat-background-alt: #052545;
+    --header-primary: #00E0E0;
+    --header-secondary: #00A0A0;
+    --text-link: var(--header-primary);
+    --interactive-normal: var(--header-secondary);
+    --channels-default: var(--header-primary);
+    --text-normal: var(--header-secondary);
 }
 
 /* Make mentions in messages look good */
