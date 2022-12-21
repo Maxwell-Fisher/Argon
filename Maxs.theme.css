@@ -1,0 +1,59 @@
+/**
+ * @name Max's fancy Discord theme
+ * @author Max#4029
+ * @description This makes Discord look bettor or something I guess
+ * @version 2022.12.20
+ * @source https://github.com/Maxwell-Fisher/Discord-Theme
+ * @website https://maxwellcrafter.com
+ */
+
+/**********************************************************************************************************************************
+I designed this theme to go along with these 2 others, so I'd recommend that you use them as well, though it really doesn't matter.
+https://betterdiscord.app/theme/kaleidoscope
+https://betterdiscord.app/theme/RadialStatus
+**********************************************************************************************************************************/
+
+
+/* Make text look good */
+:root {
+    --text-normal: #FFFFFF!important;
+    --interactive-active: #810081!important;
+    --channels-default: #f0c0f0!important;
+    --background-mentioned: #810081!important;
+}
+
+/* Make mentions in messages look good */
+.mentioned-Tre-dv {
+    position: relative;
+    background-color: var(--background-mentioned);
+    background-image: linear-gradient(to right, var(--background-accent) , #500050);
+    border-top-left-radius: 0.1vw;
+    border-bottom-left-radius: 0.1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    box-shadow: 0 0 0.2vw 0.2vw var(--background-accent) inset;
+}
+
+/* Hide Nitro gift button */
+.container-3Csys8 {
+    display: none;
+}
+
+/* Hide channel name in message box */
+.placeholder-1rCBhr {
+    display: none;
+}
+
+/* Make text rainbow */
+.editor-H2NA06, .interactive-1vLZ_I.interactive-iyXY_x.linkButton-2NshQj, .markup-eYLPri.messageContent-2t3eCI {
+    color: var(--text-normal);
+    background: -webkit-linear-gradient(top left, red, orange, yellow, green, blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Ignore rainbow text in code blocks and user status */
+.inline, .hljs, .inlineCode-ERyvy_, .activityText-ev7Z1T, .mention {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--text-normal);
+}
