@@ -1,10 +1,13 @@
 /**
  * @name Max's fancy Discord theme
  * @author Max#4029
+ * @authorId 524813260525142047
+ * @authorLink https://discordapp.com/users/524813260525142047
  * @description This makes Discord look bettor or something I guess
  * @version 2022.12.20
  * @source https://github.com/Maxwell-Fisher/Discord-Theme
  * @website https://maxwellcrafter.com
+ * @invite 
  */
 
 /**********************************************************************************************************************************
@@ -13,25 +16,34 @@ https://betterdiscord.app/theme/kaleidoscope
 https://betterdiscord.app/theme/RadialStatus
 **********************************************************************************************************************************/
 
+/* Import Ubuntu font */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 /* Make text look good */
 :root {
-    --text-normal: #FFFFFF!important;
-    --interactive-active: #810081!important;
-    --channels-default: #f0c0f0!important;
-    --background-mentioned: #810081!important;
+    --font-primary: ubuntu;
+    --brand-500: #810081;
+    --text-normal: #FFFFFF;
+    --status-danger: #e020e0;
+    --interactive-active: #e020e0;
+    --channels-default: #c0f0c0;
+    --background-mentioned: #c070c0;
+    --background-primary: #10161c;
+    --background-secondary: #101a24;
+    --background-tertiary: #10171e;
+    --background-secondary-alt: #153555;
 }
 
 /* Make mentions in messages look good */
 .mentioned-Tre-dv {
     position: relative;
     background-color: var(--background-mentioned);
-    background-image: linear-gradient(to right, var(--background-accent) , #500050);
+    background-image: linear-gradient(to right, var(--background-primary) , var(--interactive-active));
     border-top-left-radius: 0.1vw;
     border-bottom-left-radius: 0.1vw;
     border-top-right-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    box-shadow: 0 0 0.2vw 0.2vw var(--background-accent) inset;
+    box-shadow: 0 0 0.2vw 0.2vw var(--background-primary) inset;
 }
 
 /* Hide Nitro gift button */
@@ -47,13 +59,71 @@ https://betterdiscord.app/theme/RadialStatus
 /* Make text rainbow */
 .editor-H2NA06, .interactive-1vLZ_I.interactive-iyXY_x.linkButton-2NshQj, .markup-eYLPri.messageContent-2t3eCI {
     color: var(--text-normal);
-    background: -webkit-linear-gradient(top left, red, orange, yellow, green, blue, purple);
+    /* background: -webkit-linear-gradient(top left, red, orange, yellow, green, blue, purple); */
+    background: -webkit-linear-gradient(top left, aqua, cyan, lime, yellow, aqua, cyan, lime, yellow, orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Ignore rainbow text in code blocks and user status */
-.inline, .hljs, .inlineCode-ERyvy_, .activityText-ev7Z1T, .mention {
+/* Ignore rainbow text in code blocks and user status, and give them a different font */
+.inline, .hljs, .inlineCode-ERyvy_, .activityText-ev7Z1T, .mention, .activityText-1rR-8O, .subtext-14b69p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: var(--text-normal);
+    font-family: courier;
 }
+
+/* Makes profile banners a bit round */
+.banner-2boKnS.popoutBanner-16rVDY, .bannerSVGWrapper-qc0szY, .banner-2boKnS {
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+/* Make message input box round */
+.messageInputContainer-2rGDH8, .scrollableContainer-15eg7h {
+    border-radius: 1vw;
+}
+
+/* Hide redundant gif/sticker buttons */
+.button-2fCJ0o {
+    display: none;
+}
+
+/* Fix file upload button alignment */
+.attachButton-_ACFSu {
+    padding: 0.5vw 0.5vw;
+    position: sticky;
+}
+
+/* Makes user settings box rounded */
+.panels-3wFtMD {
+    /* border-top-left-radius: 1vw; */
+    border-top-right-radius: 1vw;
+}
+
+/* Makes the text input box look nice */
+.editor-H2NA06, .scrollableContainer-15eg7h {
+    caret-color: var(--interactive-active);
+    text-align: center;
+    word-break: break-word;
+    white-space: break-spaces!important;
+    background-color: var(--background-secondary-alt);
+}
+
+/* Center some things that look better that way */
+.members-3WRCEx, .activity-1-H7Zd, .headerText-1qIDDT .info-3pQQBb, .socialLinks-3ywLUf, .item-3XjbnG, .themed-2-lozF, .bd-sidebar-header, .eyebrow-Ejf06y, .info-3pQQBb, .privateChannelsHeaderContainer-1UWASm {
+    text-align: center;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remove Discord window title */
+.wordmarkWindows-2dq6rw {
+    display: none;
+}
+
+/*
+.closedFolderIconWrapper-3tRb2d {
+    background-color: var(--background-secondary-alt);
+}
+*/
