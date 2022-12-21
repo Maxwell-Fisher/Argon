@@ -32,6 +32,7 @@ https://betterdiscord.app/theme/RadialStatus
     --background-secondary: #101a24;
     --background-tertiary: #10171e;
     --background-secondary-alt: #153555;
+    --chat-background-alt: #052545;
 }
 
 /* Make mentions in messages look good */
@@ -101,7 +102,15 @@ https://betterdiscord.app/theme/RadialStatus
 }
 
 /* Makes the text input box look nice */
-.editor-H2NA06, .scrollableContainer-15eg7h {
+.scrollableContainer-15eg7h {
+    background-color: var(--background-secondary-alt);
+    
+    background-color: var(--background-primary);
+    background-image: linear-gradient(30deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(150deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(30deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(150deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(60deg, #81008177 25%, transparent 25.5%, transparent 75%, #81008177 75%, #81008177), linear-gradient(60deg, #81008177 25%, transparent 25.5%, transparent 75%, #81008177 75%, #81008177);
+    background-size: 32px 56px;
+    background-position: 0px 0px, 0px 0px, 16px 28px, 16px 28px, 0px 0px, 16px 28px;
+}
+.editor-H2NA06 {
     caret-color: var(--interactive-active);
     text-align: center;
     word-break: break-word;
@@ -110,7 +119,7 @@ https://betterdiscord.app/theme/RadialStatus
 }
 
 /* Center some things that look better that way */
-.members-3WRCEx, .activity-1-H7Zd, .headerText-1qIDDT .info-3pQQBb, .socialLinks-3ywLUf, .item-3XjbnG, .themed-2-lozF, .bd-sidebar-header, .eyebrow-Ejf06y, .info-3pQQBb, .privateChannelsHeaderContainer-1UWASm {
+.members-3WRCEx, .activity-1-H7Zd, .headerText-1qIDDT .info-3pQQBb, .socialLinks-3ywLUf, .item-3XjbnG, .themed-2-lozF, .bd-sidebar-header, .eyebrow-Ejf06y, .info-3pQQBb, .privateChannelsHeaderContainer-1UWASm, .upload-vLbqu-{
     text-align: center;
     align: center;
     margin-left: auto;
@@ -127,3 +136,11 @@ https://betterdiscord.app/theme/RadialStatus
     background-color: var(--background-secondary-alt);
 }
 */
+
+.chatContent-3KubbW {
+background-color: var(--background-primary);
+opacity: 1;
+background-image: linear-gradient(30deg, var(--chat-background-alt) 12%, transparent 12.5%, transparent 87%, var(--chat-background-alt) 87.5%, var(--chat-background-alt)), linear-gradient(150deg, var(--chat-background-alt) 12%, transparent 12.5%, transparent 87%, var(--chat-background-alt) 87.5%, var(--chat-background-alt)), linear-gradient(30deg, var(--chat-background-alt) 12%, transparent 12.5%, transparent 87%, var(--chat-background-alt) 87.5%, var(--chat-background-alt)), linear-gradient(150deg, var(--chat-background-alt) 12%, transparent 12.5%, transparent 87%, var(--chat-background-alt) 87.5%, var(--chat-background-alt)), linear-gradient(60deg, #05254577 25%, transparent 25.5%, transparent 75%, #05254577 75%, #05254577), linear-gradient(60deg, #05254577 25%, transparent 25.5%, transparent 75%, #05254577 75%, #05254577);
+background-size: 32px 56px;
+background-position: 0px 0px, 0px 0px, 16px 28px, 16px 28px, 0px 0px, 16px 28px;
+}
