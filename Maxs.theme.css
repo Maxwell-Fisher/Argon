@@ -124,3 +124,15 @@
     background-size: 32px 56px;
     background-position: 0px 0px, 0px 0px, 16px 28px, 16px 28px, 0px 0px, 16px 28px;
 }
+
+
+/* Read messages */
+.name-28HaxV
+ {
+    color: var(--brand-500);
+}
+
+/* Unread messages */
+.modeConnected-NrO4cP .name-28HaxV, .modeConnected-NrO4cP:hover .name-28HaxV, .modeSelected-3DmyhH .name-28HaxV, .modeSelected-3DmyhH:hover .name-28HaxV, .modeUnread-3Cxepe .name-28HaxV, .modeUnread-3Cxepe:hover .name-28HaxV {
+    color: var(--header-primary);
+}
