@@ -102,11 +102,12 @@
 /* Makes the text input box look nice */
 .scrollableContainer-15eg7h {
     background-color: var(--background-secondary-alt);
-    
+    /*
     background-color: var(--background-primary);
     background-image: linear-gradient(30deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(150deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(30deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(150deg, var(--brand-500) 12%, transparent 12.5%, transparent 87%, var(--brand-500) 87.5%, var(--brand-500)), linear-gradient(60deg, #81008177 25%, transparent 25.5%, transparent 75%, #81008177 75%, #81008177), linear-gradient(60deg, #81008177 25%, transparent 25.5%, transparent 75%, #81008177 75%, #81008177);
     background-size: 32px 56px;
     background-position: 0px 0px, 0px 0px, 16px 28px, 16px 28px, 0px 0px, 16px 28px;
+    */
 }
 .editor-H2NA06 {
     caret-color: var(--interactive-active);
