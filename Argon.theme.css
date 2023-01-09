@@ -36,6 +36,10 @@
     --status-danger: var(--header-secondary);
 }
 
+.scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt {
+    background-color: #420042;
+}
+
 /* Manually changes text colour of some things that don't like the variables I changed */
 .defaultColor-1EVLSt.heading-xl-semibold-2Tt6Pc.defaultColor-1GKx81.title-1_TkpU {
     color: #00E0E0;
@@ -82,7 +86,7 @@
 }
 
 /* Make text rainbow */
-.editor-H2NA06, .interactive-1vLZ_I.interactive-iyXY_x.linkButton-2NshQj, .markup-eYLPri.messageContent-2t3eCI {
+.label-2gNW3x, .editor-H2NA06, .interactive-1vLZ_I.interactive-iyXY_x.linkButton-2NshQj, .markup-eYLPri.messageContent-2t3eCI {
     color: var(--text-normal);
     background: -webkit-linear-gradient(top left, aqua, cyan, lime, yellow, orange, aqua, cyan, lime, yellow, orange);
     -webkit-background-clip: text;
